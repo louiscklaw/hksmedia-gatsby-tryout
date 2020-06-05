@@ -67,7 +67,7 @@ function Nav() {
             關於我們
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item">聯絡我們</a>
+            <Link to='/contact-us/' className="navbar-item">聯絡我們</Link>
             <a class="navbar-item">刊登廣告</a>
             <a class="navbar-item">私隱聲明</a>
             <a class="navbar-item">服務條款</a>
