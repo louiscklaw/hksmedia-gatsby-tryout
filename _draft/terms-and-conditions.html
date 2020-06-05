@@ -1,13 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+
+    .normal-size-logo img {
+      height: 10rem;
+      background-color: yellowgreen;
+    }
+
+    /*
+    .scrolled-up-logo img {
+      max-height: 2rem;
+    } */
+
+    .site-map {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .footer-right {
+      padding: 10px;
+      width: 33%;
+      background-color: blue;
+    }
+
+    .footer-left {
+      width: 67%;
+      background-color: pink;
+    }
+
+    .footer .content {
+      width: 100vw;
+
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .right-para-content {
+      height: 150px;
+      background-color: blue;
+    }
+
+    .left-para-content {
+      height: 300px;
+      background-color: green;
+    }
+
+    .left-paragraph,
+    .right-paragraph {
+      width: 20%;
+    }
+
+    .middle-paragraph {
+      width: 60%;
+    }
+
+    .center {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .middle {
+      background-color: gold;
+    }
+
+    .left,
+    .right {
+      width: 12vw;
+    }
+
+    .middle {
+      width: 76vw;
+      text-align: center;
+    }
+
+    .left-middle-right {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .main {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .navbar-item img {
+      max-height: 10rem;
+    }
+
+    .navbar-upper-deck {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    .indcies {
+      display: inline-flex;
+      flex-flow: column nowrap;
+    }
+
+    .navbar {
+      background-color: gold;
+    }
+
+    .navbar-flex {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .navbar-top {
+      background-color: red;
+      text-align: left;
+    }
+
+    .navbar-bottom {
+      background-color: blue;
+    }
+
+    .scrolled-up-logo {
+      height: 3rem;
+    }
+
+    .top {
+      position: sticky;
+      top: 0px;
+      background-color: aqua;
+    }
+    .navbar-flex-scrolled-up {
+      background-color: pink;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .footer-spacer{
+      width: 15vw;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-flow: row nowrap;
+
+      justify-content: space-between;
+    }
+
+  </style>
+
 </head>
+
 <body>
-  <a href="/index.html">
-    <img src="2020-06-05_17-37.png"/>
-  </a>
+
+
+    <div class="left-middle-right">
+      <div class="left"></div>
+      <div class="middle">
+        <div class="top-center-bottom">
+          <div class="top">
+            <nav class="navbar navbar-flex fix-top-bar" role="navigation" aria-label="main navigation">
+              <div class="navbar-upper-deck">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="https://bulma.io">
+                    <img class="company-logo" src="xlogo.png.pagespeed.ic.M7OcTo5TJW.png">
+                  </a>
+
+
+
+                  <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+
+                </div>
+
+                <div class="indcies">
+                  <img src="2020-06-05_18-12.png" />
+                  <img src="2020-06-05_18-12.png" />
+                  <img src="2020-06-05_18-12.png" />
+                </div>
+              </div>
+
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item">
+                    主頁
+                  </a>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      即時報價
+                    </a>
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item">異動掃瞄器</a>
+                      <a class="navbar-item">輪證搜尋器</a>
+                      <a class="navbar-item">互動圖表</a>
+                      <a class="navbar-item">熱門行業</a>
+                      <a class="navbar-item">新股時間表</a>
+                      <a class="navbar-item">AFE即市提示</a>
+                      <a class="navbar-item">行業選股</a>
+                      <a class="navbar-item">排行榜</a>
+                      <a class="navbar-item">公司資訊</a>
+                      <a class="navbar-item">市場概況</a>
+                    </div>
+                  </div>
+                  <a class="navbar-item">
+                    財經快訊
+                  </a>
+                  <a class="navbar-item">
+                    名家專欄
+                  </a>
+                  <a class="navbar-item">
+                    策略王電視
+                  </a>
+                  <a class="navbar-item">
+                    專題視頻
+                  </a>
+
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      關於我們
+                    </a>
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item">聯絡我們</a>
+                      <a class="navbar-item">刊登廣告</a>
+                      <a class="navbar-item">私隱聲明</a>
+                      <a class="navbar-item">服務條款</a>
+                      <a class="navbar-item">人才招聘</a>
+                      <a class="navbar-item" href="terms-and-conditions.html">免責聲明</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    2020年06月05日 星期五
+                  </div>
+                  <div class="navbar-item">
+                    <div class="buttons">
+                      <a class="button is-light" href="register.html">
+                        <i class="fas fa-sign-in-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </nav>
+
+
+          </div>
+          <div class="center">
+            <a href="index.html">
+              <img src="2020-06-05_17-37.png"/>
+            </a>
+
+          </div>
+          <div class="bottom">
+
+          </div>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-spacer"></div>
+      <div class="footer-left">
+        <div class="site-map">
+          <img src="sitemap.png" />
+
+        </div>
+      </div>
+      <div class="footer-right">
+        <img src="xlogo.png.pagespeed.ic.M7OcTo5TJW_footer.png" />
+      </div>
+      <div class="footer-spacer"></div>
+    </div>
+
+  </footer>
+
+  <script>
+    document.addEventListener( 'DOMContentLoaded', () => {
+      console.log( "helloworld" )
+
+    } )
+    window.addEventListener( 'scroll', ( e ) => {
+      let page_position = document.querySelector( 'html' ).scrollTop
+      if ( page_position != 0 ) {
+        document.querySelector( 'body' ).setAttribute( 'style', 'background-color: red' );
+        document.querySelector( '.navbar-brand .company-logo' ).classList.add( 'scrolled-up-logo' )
+        document.querySelector('.indcies').setAttribute('style','display: none;')
+
+        document.querySelector( '.navbar' ).classList.add( 'navbar-flex-scrolled-up' )
+      } else {
+        document.querySelector( 'body' ).setAttribute( 'style', 'background-color: white' );
+        document.querySelector( '.navbar-brand .company-logo' ).classList.remove( 'scrolled-up-logo' )
+        document.querySelector( '.navbar' ).classList.remove( 'navbar-flex-scrolled-up' )
+        document.querySelector('.indcies').setAttribute('style','display: block;')
+      }
+    } )
+  </script>
 </body>
+
 </html>
