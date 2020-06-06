@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+$center-width: 76vw;
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/bulma.sass";
+
+.normal-size-logo img {
+  height: 10rem;
+  background-color: yellowgreen;
+}
+
+.scrolled-up-logo {
+  height: 3rem;
+}
+
+.navbar-flex-scrolled-up {
+  background-color: pink;
+  display: flex !important;
+  flex-flow: row nowrap !important;
+}
+
+.indcies {
+  display: inline-flex;
+  flex-flow: column nowrap;
+}
+
+.middle {
+  width: $center-width;
+  background-color: gold;
+}
+
+.top {
+  position: sticky;
+  top: 0px;
+  background-color: aqua;
+}
+
+.navbar-upper-deck {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
+.navbar-flex {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.middle-paragraph {
+  width: 60%;
+}
+
+.left-paragraph,
+.right-paragraph {
+  width: 20%;
+}
+
+
+.navbar-item img {
+  max-height: 10rem;
+}
+
+
+.left,
+.right {
+  width: 12vw;
+}
+
+.left-middle-right {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer-right {
+  width: 20%;
+  background-color: blue;
+}
+
+// .footer-left {
+//   width: 67%;
+//   background-color: pink;
+// }
+
+
+
+.footer-upper-deck {
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.footer-lower-deck {
+  color: white;
+  text-align: center;
+
+}
+
+.footer-content {
+  width: $center-width;
+  background-color: red;
+  margin: auto;
+  text-align: left;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.day-string{
+  font-size: 0.8rem;
+  display: none;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
